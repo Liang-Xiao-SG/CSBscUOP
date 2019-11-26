@@ -1,4 +1,4 @@
-# CSBscUOP
+# Study Computer Science in University of People
 * Computer Science Bs.c University of People
 * Now, follow the second set of instructions, “Push an existing repository…”
 
