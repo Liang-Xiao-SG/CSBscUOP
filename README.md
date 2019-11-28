@@ -11,3 +11,10 @@
 * as the former is for use with ssh (if you set up ssh as I mentioned in “Your first time”, 
 * then you won’t have to type your password every time you push things to github).
 * If you use the latter construction, you’ll have to type your github password every time you push to github.
+
+
+
+1. +eval $(ssh-agent -s)
+   +ls -al ~/.ssh
+   +ssh-add ~/.ssh/id_rsa
+
