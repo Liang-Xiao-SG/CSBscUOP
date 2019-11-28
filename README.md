@@ -15,6 +15,6 @@
 
 
 1. +eval $(ssh-agent -s)
-   +ls -al ~/.ssh
-   +ssh-add ~/.ssh/id_rsa
+   * +ls -al ~/.ssh
+   * +ssh-add ~/.ssh/id_rsa
 
