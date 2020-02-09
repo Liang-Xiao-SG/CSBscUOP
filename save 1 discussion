@@ -1,0 +1,51 @@
+1.
+def myFunc (myAug):
+    para=myAug
+    print(para)
+myFunc('test')
+--argument is myAug . this is value provided for function
+--parameter is para as para is the reference of myAug inside function.
+2.
+myFunc(123)  # value argument
+myFunc(myvariable) # variable argument
+myFunc(3+4) #expression argument
+
+3.
+>>> def myFunc():
+	local=1
+>>> local
+Traceback (most recent call last):
+  File "<pyshell#33>", line 1, in <module>
+    local
+NameError: name 'local' is not defined
+local is created in function frame.
+its not visible outside the function
+
+4.
+
+>>> def myfunc(arg):
+	local=arg
+>>> local
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    local
+NameError: name 'local' is not defined
+>>> arg
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    arg
+NameError: name 'arg' is not defined
+ the parameter arg is a local parameter that declared   only inside myFunc frame
+thus can not be access outside the function
+5.
+>>> myVar1
+1
+>>> def myFunc():
+	myVar1=2
+
+
+>>> myVar1
+1
+the variable outside will still able to retain its value while access it again.
+the local variable inside function will not retain its value as its get garbaged collected when there is no more reference when program finish execution.
+ 
