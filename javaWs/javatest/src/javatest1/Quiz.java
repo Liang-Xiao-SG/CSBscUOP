@@ -1,7 +1,5 @@
 package javatest1;
 
-import javax.swing.JOptionPane;
-
 public class Quiz {
 
 	public static void main(String[] args) {
@@ -9,15 +7,16 @@ public class Quiz {
 		questionArry[0].check();
 		questionArry[1].check();
 		questionArry[2].check();
-		JOptionPane.showMessageDialog(null, MultipleChoiceQuestion.nCorrect + " correct out of questions " + MultipleChoiceQuestion.nQuestions);
-
+		questionArry[3].check();
+		questionArry[4].check();
+		MultipleChoiceQuestion.showResults();
 	}
 
 	/**
 	 * @return a set of questions as Array
 	 */
 	private static MultipleChoiceQuestion[] prepareQuestion() {
-		MultipleChoiceQuestion[] questArr = new MultipleChoiceQuestion[3];
+		MultipleChoiceQuestion[] questArr = new MultipleChoiceQuestion[5];
 		String string = "What is a PI?\n";
 		String string2 = "a test of knowledge, especially a brief, informal test given to students";
 		String string3 = "3.14";
@@ -44,10 +43,17 @@ public class Quiz {
 				"A");
 		MultipleChoiceQuestion q3 = new MultipleChoiceQuestion(string13, string14, string15, string16, string17,
 				string18, "C");
+		MultipleChoiceQuestion q4 = new MultipleChoiceQuestion("very very new question lol", string, string2, string3,
+				string4, string18, "C");
+		MultipleChoiceQuestion q5 = new MultipleChoiceQuestion("super super new question", string5, string6, string8,
+				string16, string18, "C");
 
 		questArr[0] = q1;
 		questArr[1] = q2;
 		questArr[2] = q3;
+		questArr[3] = q4;
+		questArr[4] = q5;
 		return questArr;
 	}
 }
+
